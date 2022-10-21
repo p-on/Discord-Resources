@@ -33,6 +33,5 @@ if response.status_code == 200:
         print(f"Banner — {banner}")
     if data["banner_color"]:
         print(f"Banner Color — {C().hex(data['banner_color'], '████████', rgb_mode=True)}")
-
 else:
     print("Invalid token or operation did not find a user with that Discord ID")
