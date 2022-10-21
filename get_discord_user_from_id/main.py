@@ -26,10 +26,10 @@ if response.status_code == 200:
     tag = f"{data['username']}#{data['discriminator']}"
     print(f"ID — {id}\nTag — {tag}")
     if data["avatar"]:
-        avatar = f"https://cdn.discordapp.com/avatars/{id}/{data['avatar']}.{'gif' if data['avatar'][:2] == 'a_' else 'png'}?size=80"
+        avatar = f"https://cdn.discordapp.com/avatars/{id}/{data['avatar']}.{'gif' if data['avatar'][:2] == 'a_' else 'png'}"
         print(f"Avatar — {avatar}")
     if data["banner"]:
-        banner = f"https://cdn.discordapp.com/banners/{id}/{data['banner']}.{'gif' if data['banner'][:2] == 'a_' else 'png'}?size=80"
+        banner = f"https://cdn.discordapp.com/banners/{id}/{data['banner']}.{'gif' if data['banner'][:2] == 'a_' else 'png'}"
         print(f"Banner — {banner}")
     if data["banner_color"]:
         print(f"Banner Color — {C().hex(data['banner_color'], '████████', rgb_mode=True)}")
